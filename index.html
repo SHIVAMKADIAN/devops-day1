@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Day 1 | The Future of Infrastructure</title>
+    <meta name="description"
+        content="Accelerate your cloud deployments and infrastructure automation with DevOps Day 1.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="background-effects">
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+        <div class="glow glow-3"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <i data-feather="terminal" class="logo-icon"></i>
+                <span>Day 1</span>
+            </div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="#pricing">Pricing</a>
+            </div>
+            <div class="nav-actions">
+                <button class="btn btn-secondary">Sign In</button>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="container hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span>
+                    Version 2.0 is now live
+                </div>
+                <h1 class="hero-title">
+                    Deploy faster, <br>
+                    <span class="text-gradient">scale without limits</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Automate your entire infrastructure workflow from a single, unified control plane. Stop fighting
+                    YAML configuration and start building product.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary btn-lg">
+                        Start Deploying Free
+                        <i data-feather="arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary btn-lg">
+                        <i data-feather="book-open"></i>
+                        Read Documentation
+                    </button>
+                </div>
+
+                <div class="dashboard-preview">
+                    <div class="glass-panel mockup-window">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="mockup-url">api.day1.dev / production</div>
+                        </div>
+                        <div class="mockup-body">
+                            <pre><code><span class="token-keyword">resource</span> <span class="token-string">"aws_instance"</span> <span class="token-string">"web"</span> {
+  <span class="token-property">ami</span>           <span class="token-operator">=</span> <span class="token-string">"ami-0c55b159cbfafe1f0"</span>
+  <span class="token-property">instance_type</span> <span class="token-operator">=</span> <span class="token-string">"t3.micro"</span>
+
+  <span class="token-keyword">tags</span> <span class="token-operator">=</span> {
+    <span class="token-property">Name</span> <span class="token-operator">=</span> <span class="token-string">"Production_Web_Server"</span>
+    <span class="token-property">Env</span>  <span class="token-operator">=</span> <span class="token-string">"Production"</span>
+  }
+}
+
+<span class="token-comment"># Optimized deployment triggered...</span>
+<span class="token-success">✔ Infrastructure state synced successfully.</span></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Everything you need to <span class="text-gradient">ship faster</span></h2>
+                    <p>Powerful primitives designed for high-performance engineering teams.</p>
+                </div>
+
+                <div class="features-grid">
+                    <!-- Feature 1 -->
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-feather="zap"></i>
+                        </div>
+                        <h3>Zero-config Deployments</h3>
+                        <p>Push to main and we handle the rest. Automatic builds, provisioning, and highly available
+                            deployments.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-feather="shield"></i>
+                        </div>
+                        <h3>Security by Default</h3>
+                        <p>Enterprise grade security out of the box. Automated certificate management, IAM scoping, and
+                            secret injection.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-feather="activity"></i>
+                        </div>
+                        <h3>Observability Built-in</h3>
+                        <p>Real-time metrics, logs, and distributed tracing integrated directly into your infrastructure
+                            deployments.</p>
+                    </div>
+
+                    <!-- Feature 4 -->
+                    <div class="glass-card feature-card">
+                        <div class="feature-icon-wrapper">
+                            <i data-feather="git-merge"></i>
+                        </div>
+                        <h3>Preview Environments</h3>
+                        <p>Generate full-stack ephemeral environments for every pull request automatically. Review
+                            before you merge.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bottom-cta">
+            <div class="container">
+                <div class="glass-panel cta-panel">
+                    <h2>Ready to supercharge your workflow?</h2>
+                    <p>Join thousands of developers shipping faster with Day 1.</p>
+                    <button class="btn btn-primary btn-lg">Get Started Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i data-feather="terminal" class="logo-icon"></i>
+                    <span>Day 1</span>
+                </div>
+                <p class="footer-tagline">Building the tools for the next generation of software.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Product</h4>
+                    <a href="#">Features</a>
+                    <a href="#">Integrations</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Changelog</a>
+                </div>
+                <div class="link-group">
+                    <h4>Resources</h4>
+                    <a href="#">Documentation</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Community</a>
+                    <a href="#">Open Source</a>
+                </div>
+                <div class="link-group">
+                    <h4>Company</h4>
+                    <a href="#">About</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Legal</a>
+                    <a href="#">Contact</a>
+                </div>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Day 1 Technologies. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i data-feather="twitter"></i></a>
+                <a href="#"><i data-feather="github"></i></a>
+                <a href="#"><i data-feather="linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Initialize Feather Icons -->
+    <script>
+        feather.replace();
+    </script>
+</body>
+
+</html>
